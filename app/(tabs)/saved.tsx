@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import {  Text, View } from 'react-native'
 
 const saved = () => {
   return (
@@ -10,4 +10,3 @@ const saved = () => {
 
 export default saved
 
-const styles = StyleSheet.create({})

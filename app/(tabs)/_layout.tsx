@@ -6,7 +6,7 @@ function TabIcon({ focused, icon, title }: any) {
   if (focused) {
     return (
       <ImageBackground
-        className="flex flex-row w-full  min-w-[110px] min-h-14 justify-center items-center rounded-full overflow-hidden mt-4  "
+        className="flex flex-1 flex-row w-full  min-w-[110px] min-h-16 justify-center items-center rounded-full overflow-hidden mt-4  "
         source={images.highlight}
       >
         <Image tintColor="#151312" className="size-5" source={icon} />
@@ -19,7 +19,7 @@ function TabIcon({ focused, icon, title }: any) {
 
   return (
     <View className=" size-full justify-center items-center mt-4 ">
-      <Image source={icon} tintColor="#A8B5DB" className="size-5" />
+      <Image source={icon} tintColor="#A8B5DB" className="size-4" />
     </View>
   );
 }
@@ -43,7 +43,7 @@ export default function TabsLayout() {
           position: "absolute",
           overflow: "hidden",
           borderWidth: 1,
-          borderColor: "#0F0D23",
+          borderColor: "transparent",
         },
       }}
     >
