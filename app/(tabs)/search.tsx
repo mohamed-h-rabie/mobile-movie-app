@@ -35,7 +35,7 @@ const search = () => {
   }, [query]);
   return (
     <View className="bg-dark-200 h-full flex flex-1 min-w-full">
-      <Image source={images.bg} className="absolute z-0" />
+      <Image source={images.bg} className="absolute z-0 w-full" />
       <FlatList
         ListEmptyComponent={
           !loading && !error ? (

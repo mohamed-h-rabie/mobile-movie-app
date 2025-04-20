@@ -32,14 +32,18 @@ const Index = () => {
 
   return (
     <View className="bg-dark-200 h-full flex flex-1 min-w-full">
-      <Image source={images.bg} className="absolute z-0 " />
+      <Image resizeMode="cover" source={images.bg} className="absolute z-0 w-full " />
 
       <ScrollView
         className="px-5"
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ minHeight: "100%", paddingBottom: 10 }}
       >
-        <Image source={icons.logo} className="mx-auto w-12 h-10 mt-5" />
+        <Image
+          resizeMode="cover"
+          source={icons.logo}
+          className="mx-auto w-12 h-10 mt-5"
+        />
         <SearchBar
           onPress={() => router.push("/search")}
           placeholder="Search for a movie"
