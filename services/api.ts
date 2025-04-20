@@ -20,5 +20,16 @@ export const fetchPopularMovies = async ({ query }: { query: string }) => {
   if (response.status >= 400) {
     throw new Error("failed to fetch");
   }
-  return response.data
+  return response.data;
+};
+export const fetchTrendingMovies = async () => {
+  const endpoint = `${TMDB_MOVIE.BASE_URL}/trending/movie/day?language=en-US`;
+
+  const response = await axios.get(endpoint, {
+    headers: TMDB_MOVIE.headers,
+  });
+  if (response.status >= 400) {
+    throw new Error("failed to fetch");
+  }
+  return response.data;
 };

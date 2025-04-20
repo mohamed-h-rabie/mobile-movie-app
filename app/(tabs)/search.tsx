@@ -21,9 +21,9 @@ const search = () => {
     false
   );
   useEffect(() => {
-    const timeoutId = setTimeout( () => {
+    const timeoutId = setTimeout(() => {
       if (query.length > 0) {
-         refetch();
+        refetch();
       } else {
         reset();
       }
@@ -75,7 +75,7 @@ const search = () => {
             {loading && (
               <ActivityIndicator
                 size="large"
-                color="#0000ff"
+                color="#D53644"
                 className="my-3"
               />
             )}
